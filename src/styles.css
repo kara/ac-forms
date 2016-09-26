@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+/*here start the horrible, hack-y styles. for demo use only! */
+
+body {
+  background: rgba(0,0,0,0.04);
+}
+
+input.ng-invalid.ng-touched {
+  border-bottom: 1px solid red;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+reactive-forms-comp, forms-comp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+md-card {
+  width: 500px;
+  margin: 8px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 36px;
+  margin: 8px 0;
+  font-size: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.18);
+  font: inherit;
+  outline: none;
+}
+
+input[type="radio"] {
+  height: auto;
+  width: auto;
+  margin: 6px;
+}
+
+select {
+  height: 36px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.38);
+  position: relative;
+  top: 8px;
+  font-family: Roboto, sans-serif;
+  font-size: 100%;
+  margin: 0 8px;
+}
+
+.flex {
+  display: flex;
+}
+
+label {
+  display: block;
+  margin: 16px 0;
+  font-style: italic;
+}
+
+.errors {
+  color: red;
+}
+
+form md-card-actions {
+  margin-bottom: -24px;
+}
+
