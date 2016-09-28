@@ -1,5 +1,5 @@
 import { Component, Directive } from '@angular/core';
-import { AbstractControl, NG_VALIDATORS, Validator } from '@angular/forms';
+import { AbstractControl, NG_VALIDATORS } from '@angular/forms';
 
 @Component({
   selector: 'forms-comp',
@@ -7,10 +7,5 @@ import { AbstractControl, NG_VALIDATORS, Validator } from '@angular/forms';
   styleUrls: ['./forms.component.css']
 })
 export class FormsComponent {
-  states = [
-    'AZ',
-    'CA',
-    'NY'
-  ];
-
+  
 }

@@ -7,12 +7,6 @@ import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, Valida
   styleUrls: ['./reactive-forms.component.css']
 })
 export class ReactiveFormsComponent {
-  states = [
-    'AZ',
-    'CA',
-    'NY'
-  ];
-
   constructor() {
 
   }

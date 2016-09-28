@@ -13,7 +13,7 @@ import { SwitchControlComponent } from './switch-control/switch-control.componen
     AppComponent,
     FormsComponent,
     ReactiveFormsComponent,
-    SwitchControlComponent
+    SwitchControlComponent,
   ],
   imports: [
     BrowserModule,

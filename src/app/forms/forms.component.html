@@ -1,29 +1,20 @@
 <h2>FormsModule</h2>
 <md-card>
   <md-card-title>
-    Complete your order
+    Registration form
   </md-card-title>
   <form novalidate>
     <input name="first" placeholder="First name">
     <input name="last" placeholder="Last name">
     <div>
-      <label>Address</label>
-      <input name="street" placeholder="Street">
-      <div class="flex">
-        <input name="city" placeholder="City">
-        <select name="state">
-          <option value="" disabled>state</option>
-          <option *ngFor="let state of states" [value]="state">{{ state }}</option>
-        </select>
-        <input name="zip" type="number" placeholder="Zip">
-      </div>
-    </div>
-    <div>
       <label>Account</label>
       <input name="username" placeholder="Username">
-      <input type="password" name="password" placeholder="Password">
-      <input type="password" name="confirm" placeholder="Confirm password">
+      <input name="password" placeholder="Password">
+      <input name="confirm" placeholder="Confirm password">
     </div>
+    <label>Would you like to receive a newsletter?</label>
+    <input type="radio" value="yes" name="newsletter"> Yes
+    <input type="radio" value="no" name="newsletter"> No
     <md-card-actions align="end">
       <button md-button>SUBMIT</button>
     </md-card-actions>
