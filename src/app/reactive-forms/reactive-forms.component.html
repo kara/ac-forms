@@ -3,23 +3,24 @@
   <md-card-title>
     Registration form
   </md-card-title>
-  <form novalidate>
-    <input name="first" placeholder="First name">
-    <input name="last" placeholder="Last name">
-    <div>
+  <form novalidate [formGroup]="form">
+    <input formControlName="first" placeholder="First name">
+    <input formControlName="last" placeholder="Last name">
+    <div formGroupName="account">
       <label>Account</label>
-      <input name="username" placeholder="Username">
-      <input name="password" placeholder="Password">
-      <input name="confirm" placeholder="Confirm password">
+      <input formControlName="username" placeholder="Username">
+      <input formControlName="password" placeholder="Password">
+      <input formControlName="confirm" placeholder="Confirm password">
     </div>
     <label>Would you like to receive a newsletter?</label>
-    <input type="radio" value="yes" name="newsletter"> Yes
-    <input type="radio" value="no" name="newsletter"> No
+    <switch-control formControlName="newsletter"></switch-control>
     <md-card-actions align="end">
       <button md-button>SUBMIT</button>
     </md-card-actions>
   </form>
 </md-card>
 <md-card>
-  <p></p>
+  <p>Form: {{ form.value | json }}</p>
+  <p>Form status: {{ form.status }}</p>
+  <p>Account status: {{ form.get('account').errors | json }}</p>
 </md-card>

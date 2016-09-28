@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
-import { FormsComponent } from './forms/forms.component';
+import { FormsComponent, PasswordMatcher } from './forms/forms.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { SwitchControlComponent } from './switch-control/switch-control.component';
 
@@ -14,6 +14,7 @@ import { SwitchControlComponent } from './switch-control/switch-control.componen
     FormsComponent,
     ReactiveFormsComponent,
     SwitchControlComponent,
+    PasswordMatcher
   ],
   imports: [
     BrowserModule,
